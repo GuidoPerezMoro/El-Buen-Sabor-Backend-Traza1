@@ -10,21 +10,18 @@ import lombok.experimental.SuperBuilder;
 import java.util.HashSet;
 import java.util.Set;
 
-@Entity
-@AllArgsConstructor
 @NoArgsConstructor
-@Setter
+@AllArgsConstructor
 @Getter
+@Setter
+@Entity
 @ToString
 @SuperBuilder
-//@Audited
 public class Categoria extends Base{
+
     private String denominacion;
 
-
-
     @ManyToMany(mappedBy = "categorias")
-    //SE AGREGA EL BUILDER.DEFAULT PARA QUE BUILDER NO SOBREESCRIBA LA INICIALIZACION DE LA LISTA
     @Builder.Default
     private Set<Sucursal> sucursales = new HashSet<>();
 
@@ -44,6 +41,4 @@ public class Categoria extends Base{
     //SE AGREGA EL BUILDER.DEFAULT PARA QUE BUILDER NO SOBREESCRIBA LA INICIALIZACION DE LA LISTA
     @Builder.Default
     private Set<Categoria> subCategorias = new HashSet<>();
-
-
 }

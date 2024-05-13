@@ -26,18 +26,12 @@ public class BuenSaborApplication {
 	@Autowired
 	private ClienteRepository clienteRepository;
 	@Autowired
-	private EmpleadoRepository empleadoRepository;
-	@Autowired
-	private ImagenClienteRepository imagenClienteRepository;
-	@Autowired
-	private ImagenEmpleadoRepository imagenEmpleadoRepository;
+	private ImagenPersonaRepository imagenPersonaRepository;
 	@Autowired
 	private PromocionDetalleRepository promocionDetalleRepository;
 
 	@Autowired
-	private UsuarioClienteRepository usuarioClienteRepository;
-	@Autowired
-	private UsuarioEmpleadoRepository usuarioEmpleadoRepository;
+	private UsuarioRepository usuarioRepository;
 
 	@Autowired
 	private PaisRepository paisRepository;
@@ -71,8 +65,6 @@ public class BuenSaborApplication {
 
 	@Autowired
 	private ImagenArticuloRepository imagenArticuloRepository;
-	@Autowired
-	private ImagenPromocionRepository imagenPromocionRepository;
 
 	@Autowired
 	private PromocionRepository promocionRepository;

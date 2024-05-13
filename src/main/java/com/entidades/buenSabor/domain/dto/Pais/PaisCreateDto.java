@@ -1,15 +1,14 @@
-package com.entidades.buenSabor.domain.dto;
+package com.entidades.buenSabor.domain.dto.Pais;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
 
-@NoArgsConstructor
-@AllArgsConstructor
 @Getter
 @Setter
-public class PaisDto extends BaseDto{
-    private Long id;
+@NoArgsConstructor
+@AllArgsConstructor
+public class PaisCreateDto {
     private String nombre;
 }

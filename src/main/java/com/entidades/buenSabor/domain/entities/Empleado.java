@@ -15,7 +15,7 @@ import java.util.Set;
 @Getter
 @SuperBuilder
 //@Audited
-public class Empleado extends Base{
+public class Empleado extends Persona{
 
     private Rol tipoEmpleado;
 

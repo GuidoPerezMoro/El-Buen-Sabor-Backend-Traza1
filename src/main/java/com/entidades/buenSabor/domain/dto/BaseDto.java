@@ -10,6 +10,5 @@ import lombok.Setter;
 @Getter
 @Setter
 public class BaseDto {
-    protected Long id;
-    protected boolean eliminado;
+    private Long id;
 }
